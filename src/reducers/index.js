@@ -1,8 +1,8 @@
 import {combineReducers} from 'redux';
-import courses from './courseReducer';
+import contacts from './contactReducer';
 
 const rootReducer = combineReducers({
-  courses //courses: courses
+  contacts // contacts: contacts
 });
 
 export default rootReducer;
