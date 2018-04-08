@@ -8,6 +8,7 @@ const Header = () => {
       <h1>React and Redux</h1>
       <ul className="nav nav-tabs">
         <li className="nav-item" ><NavLink to="/" exact className="nav-link" activeClassName="active">Home</NavLink></li>
+        <li className="nav-item" ><NavLink to="/contact" className="nav-link" activeClassName="active">Contact</NavLink></li>
         <li className="nav-item" ><NavLink to="/about" className="nav-link" activeClassName="active">About</NavLink></li>
       </ul>
     </div>
