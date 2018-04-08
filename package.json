@@ -13,6 +13,19 @@
   },
   "author": "Peter",
   "license": "ISC",
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "bootstrap": "^4.0.0",
+    "jquery": "^3.3.1",
+    "lodash": "^4.17.5",
+    "react": "^16.3.0",
+    "react-dom": "^16.3.0",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.2.2",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0",
+    "toastr": "^2.1.4"
+  },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
@@ -36,18 +49,5 @@
     "webpack": "^4.4.1",
     "webpack-dev-middleware": "^3.1.0",
     "webpack-hot-middleware": "^2.21.2"
-  },
-  "dependencies": {
-    "babel-polyfill": "^6.26.0",
-    "bootstrap": "^4.0.0",
-    "jquery": "^3.3.1",
-    "lodash": "^4.17.5",
-    "react": "^16.3.0",
-    "react-dom": "^16.3.0",
-    "react-redux": "^5.0.7",
-    "react-router-dom": "^4.2.2",
-    "redux": "^3.7.2",
-    "redux-thunk": "^2.2.0",
-    "toastr": "^2.1.4"
   }
 }

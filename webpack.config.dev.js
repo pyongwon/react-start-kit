@@ -6,6 +6,7 @@ export default {
   devtool: 'inline-source-map',
   context: __dirname, // path.resolve(__dirname, 'src/index'),
   entry: [
+    'webpack-hot-middleware/client?reload=true', // reloads the page if hot module reloading fails
     path.resolve(__dirname, 'src/index')
   ],
   target: 'web',
