@@ -1,9 +1,11 @@
-export default function contactReducer(state = [], action) {
+import * as types from '../actions/actionTypes';
+import InitialState from './InitialState';
+
+export default function contactReducer(state = InitialState.contacts, action) {
   switch(action.type) {
-      case 'CREATE_CONTACT':
-          return [...state, 
-            Object.assign({}, action.contact)]; // new array
-      default:
-        return state;
+    case types.LOAD_CONTACTS_SUCCESS:
+      return action.contacts;
+     default:
+      return state;
   }
 }

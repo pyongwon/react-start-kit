@@ -12,8 +12,7 @@ import '../node_modules/toastr/build/toastr.min.css';
 const store = configureStore();
 
 // Dispatch actions to load initial state.
-//store.dispatch(loadCourses());
-//store.dispatch(loadAuthors());
+// store.dispatch(loadContacts());
 
 render(
   <Provider store={store}> 
