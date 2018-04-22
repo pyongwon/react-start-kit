@@ -4,14 +4,15 @@ import path from 'path';
 export default {
   mode: 'development',
   devtool: 'inline-source-map',
-  context: __dirname, // path.resolve(__dirname, 'src/index'),
+  context: __dirname,
   entry: [
+    'eventsource-polyfill', // necessary for hot reloading with IE
     'webpack-hot-middleware/client?reload=true', // reloads the page if hot module reloading fails
     path.resolve(__dirname, 'src/index')
   ],
   target: 'web',
   output: {
-    path: __dirname + '/dist', // physical files in production - run `npm run build`.
+    path: path.resolve(__dirname, 'dist'), // physical files in production - run `npm run build`.
     publicPath: '/',
     filename: 'bundle.js'
   },
@@ -21,7 +22,7 @@ export default {
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoEmitOnErrorsPlugin() // This supersedes the (now deprecated) webpack 1 plugin NoErrorsPlugin. 
+    new webpack.NoEmitOnErrorsPlugin()
   ],
   module: {
     rules: [
