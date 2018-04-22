@@ -13,6 +13,8 @@ class App extends React.Component {
     return (
       <BrowserRouter>
         <div className="container-fluid">
+          <h1>React and Redux</h1>
+          <hr />
           <Header />           
           <div className="route-def">
           <Switch>

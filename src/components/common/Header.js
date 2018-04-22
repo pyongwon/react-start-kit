@@ -5,7 +5,6 @@ import { NavLink, Switch, Redirect } from 'react-router-dom';
 const Header = () => {
   return (
     <div>
-      <h1>React and Redux</h1>
       <ul className="nav nav-tabs">
         <li className="nav-item" ><NavLink to="/" exact className="nav-link" activeClassName="active">Home</NavLink></li>
         <li className="nav-item" ><NavLink to="/contact" className="nav-link" activeClassName="active">Contact</NavLink></li>
