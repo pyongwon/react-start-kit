@@ -12,16 +12,14 @@ class App extends React.Component {
   render() {
     return (
       <BrowserRouter>
-        <div className="container-fluid">
-          <h1>React and Redux</h1>
-          <hr />
-          <Header />           
-          <div className="route-def">
-          <Switch>
-            <Route exact path="/" component={HomePage} />
-            <Route path="/about" component={AboutPage} />
-            <Route path="/contact" component={ContactPage} />
-          </Switch>
+        <div>
+          <Header />
+          <div className="route-def container-fluid">
+            <Switch>
+              <Route exact path="/" component={HomePage} />
+              <Route path="/about" component={AboutPage} />
+              <Route path="/contact" component={ContactPage} />
+            </Switch>
           </div>
         </div>
       </BrowserRouter>
