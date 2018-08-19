@@ -15,9 +15,6 @@ const Header = () => {
             <li className="nav-item active">
               <NavLink to="/" exact className="nav-link" activeClassName="active">Home</NavLink>
             </li>
-            <li className="nav-item">
-              <NavLink to="/contact" className="nav-link" activeClassName="active">Contact</NavLink>
-            </li>
             <li className="nav-item dropdown">
               <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Dropdown
@@ -27,6 +24,9 @@ const Header = () => {
                 <div className="dropdown-divider" />
                 <a className="dropdown-item" href="#">Action</a>
               </div>
+            </li>
+            <li className="nav-item">
+              <NavLink to="/contact" className="nav-link" activeClassName="active">Contact</NavLink>
             </li>
             <li className="nav-item">
               <NavLink to="/about" className="nav-link" activeClassName="active">About</NavLink>

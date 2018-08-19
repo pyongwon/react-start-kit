@@ -22,7 +22,7 @@ require.extensions['.jpg'] = function () {
 // to simulate a browser environment for tests.
 var jsdom = require('jsdom');
 const { JSDOM } = jsdom;
-const { document } = (new JSDOM('')).window;
+const { document } = (new JSDOM('', { url: "https://localhost/"})).window;
 global.document = document;
 global.window = document.defaultView;
 
