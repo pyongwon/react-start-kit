@@ -19,8 +19,8 @@ app.use(webPackDevMiddleware(compiler, {
 
 app.use(webPackHotMiddleware(compiler));
 
-app.get('*', function(req, res) {
-  res.sendFile(path.join( __dirname, '../src/index.html'));
+app.get('*', function(request, response) {
+  response.sendFile(path.join( __dirname, '../src/index.html'));
 });
 
 app.listen(port, function(err) {
